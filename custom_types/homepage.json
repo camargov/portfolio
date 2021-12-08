@@ -1,0 +1,65 @@
+{
+    "Main" : {
+      "portfolio_header" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading1,heading2,heading3",
+          "label" : "Portfolio Header",
+          "placeholder" : "Portfolio"
+        }
+      },
+      "portfolio_sentence" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading2,heading3,heading4,heading5,heading6",
+          "label" : "Portfolio Sentence"
+        }
+      }
+    },
+    "Portfolio Overview" : {
+      "portfolio_overview_header" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading2,heading3,heading4,heading5,heading6",
+          "label" : "Portfolio Overview Header"
+        }
+      },
+      "portfolio_overview_description" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Portfolio Overview Description"
+        }
+      },
+      "portfolio_overview_image" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : { },
+          "thumbnails" : [ ],
+          "label" : "Portfolio Overview Image"
+        }
+      }
+    },
+    "Project Tree" : {
+      "project_tree_header" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading2,heading3,heading4,heading5,heading6",
+          "label" : "Project Tree Header"
+        }
+      },
+      "project_tree_group" : {
+        "type" : "Group",
+        "config" : {
+          "fields" : {
+            "project_category" : {
+              "type" : "Text",
+              "config" : {
+                "label" : "Project Category"
+              }
+            }
+          },
+          "label" : "Project Tree Group"
+        }
+      }
+    }
+  }

@@ -1,0 +1,121 @@
+{
+    "Main" : {
+      "background" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : { },
+          "thumbnails" : [ ],
+          "label" : "Background"
+        }
+      },
+      "about_me_header" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+          "label" : "About Me Header"
+        }
+      },
+      "about_me_sentence" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading2,heading3,heading4,heading5,heading6",
+          "label" : "About Me Sentence"
+        }
+      }
+    },
+    "Overview" : {
+      "overview_header" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading1,heading2,heading3,heading4",
+          "label" : "Overview Header"
+        }
+      },
+      "headshot" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : { },
+          "thumbnails" : [ ],
+          "label" : "Headshot"
+        }
+      },
+      "overview_description" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Overview Description"
+        }
+      }
+    },
+    "Facts" : {
+      "facts_header" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading1,heading2,heading3",
+          "label" : "Facts Header"
+        }
+      },
+      "facts_list" : {
+        "type" : "Group",
+        "config" : {
+          "fields" : {
+            "fact" : {
+              "type" : "Text",
+              "config" : {
+                "label" : "Fact"
+              }
+            }
+          },
+          "label" : "Facts List"
+        }
+      }
+    },
+    "More Info" : {
+      "more_info_group" : {
+        "type" : "Group",
+        "config" : {
+          "fields" : {
+            "more_info_photo" : {
+              "type" : "Image",
+              "config" : {
+                "constraint" : { },
+                "thumbnails" : [ ],
+                "label" : "More Info photo"
+              }
+            },
+            "more_info_header" : {
+              "type" : "StructuredText",
+              "config" : {
+                "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+                "label" : "More Info Header"
+              }
+            },
+            "more_info_description" : {
+              "type" : "Text",
+              "config" : {
+                "label" : "More Info Description"
+              }
+            }
+          },
+          "label" : "More Info Group"
+        }
+      }
+    },
+    "Photos" : {
+      "photo_group" : {
+        "type" : "Group",
+        "config" : {
+          "fields" : {
+            "personal_photo" : {
+              "type" : "Image",
+              "config" : {
+                "constraint" : { },
+                "thumbnails" : [ ],
+                "label" : "Personal Photo"
+              }
+            }
+          },
+          "label" : "Photo Group"
+        }
+      }
+    }
+  }

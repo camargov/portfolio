@@ -1,0 +1,55 @@
+{
+    "Main" : {
+      "call_to_action" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+          "label" : "Call To Action"
+        }
+      },
+      "contact_group" : {
+        "type" : "Group",
+        "config" : {
+          "fields" : {
+            "contact_image" : {
+              "type" : "Image",
+              "config" : {
+                "constraint" : { },
+                "thumbnails" : [ ],
+                "label" : "Contact Image"
+              }
+            },
+            "contact_item_link" : {
+              "type" : "Link",
+              "config" : {
+                "label" : "Contact Item Link",
+                "select" : null
+              }
+            },
+            "contact_item_title" : {
+              "type" : "Text",
+              "config" : {
+                "label" : "Contact Item Title"
+              }
+            }
+          },
+          "label" : "Contact Group"
+        }
+      }
+    },
+    "General" : {
+      "footer_header" : {
+        "type" : "StructuredText",
+        "config" : {
+          "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+          "label" : "Footer Header"
+        }
+      },
+      "footer_description" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Footer Description"
+        }
+      }
+    }
+  }
