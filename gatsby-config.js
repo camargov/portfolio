@@ -1,5 +1,3 @@
-const linkResolver = require('./src/utils/linkResolver')
-
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -15,7 +13,7 @@ module.exports = {
       resolve: 'gatsby-source-prismic',
       options: {
         repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
-        linkResolver: (doc) => linkResolver(doc),
+        linkResolver: require('./src/utils/linkResolver').linkResolver,
         schemas: {
           homepage: require('./custom_types/homepage.json'),
           project: require('./custom_types/project.json'),

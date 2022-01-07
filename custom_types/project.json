@@ -1,71 +1,77 @@
 {
-    "Main" : {
-      "background" : {
-        "type" : "Image",
-        "config" : {
-          "constraint" : { },
-          "thumbnails" : [ ],
-          "label" : "Background"
-        }
-      },
-      "project_title" : {
-        "type" : "StructuredText",
-        "config" : {
-          "single" : "heading1,heading2,heading3",
-          "label" : "Project Title"
-        }
-      },
-      "project_characteristics" : {
-        "type" : "Text",
-        "config" : {
-          "label" : "Project Characteristics"
-        }
+  "Main" : {
+    "background" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Background"
       }
     },
-    "Overview" : {
-      "overview_header" : {
-        "type" : "StructuredText",
-        "config" : {
-          "single" : "heading1,heading2,heading3",
-          "label" : "Overview Header"
-        }
-      },
-      "overview_description" : {
-        "type" : "Text",
-        "config" : {
-          "label" : "Overview Description"
-        }
+    "project_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1,heading2,heading3",
+        "label" : "Project Title"
       }
     },
-    "Phase" : {
-      "phase" : {
-        "type" : "Group",
-        "config" : {
-          "fields" : {
-            "phase_image" : {
-              "type" : "Image",
-              "config" : {
-                "constraint" : { },
-                "thumbnails" : [ ],
-                "label" : "Phase Image"
-              }
-            },
-            "section_header" : {
-              "type" : "StructuredText",
-              "config" : {
-                "single" : "heading3,heading4,heading5,heading6",
-                "label" : "Phase Header"
-              }
-            },
-            "phase_description" : {
-              "type" : "Text",
-              "config" : {
-                "label" : "Phase Description"
-              }
+    "project_characteristics" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Project Characteristics"
+      }
+    },
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "uid"
+      }
+    }
+  },
+  "Overview" : {
+    "overview_header" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1,heading2,heading3",
+        "label" : "Overview Header"
+      }
+    },
+    "overview_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Overview Description"
+      }
+    }
+  },
+  "Phase" : {
+    "phase" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "phase_image" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : { },
+              "thumbnails" : [ ],
+              "label" : "Phase Image"
             }
           },
-          "label" : "Phase"
-        }
+          "section_header" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading3,heading4,heading5,heading6",
+              "label" : "Phase Header"
+            }
+          },
+          "phase_description" : {
+            "type" : "Text",
+            "config" : {
+              "label" : "Phase Description"
+            }
+          }
+        },
+        "label" : "Phase"
       }
     }
   }
+}
