@@ -1,10 +1,10 @@
 import * as React from 'react'
 
-const HeroLayout = ({ title }) => {
+const HeroLayout = ({ title, sentence }) => {
     return (
         <div>
             <h1>{title}</h1>
-            <p>This is a sentence about what I do...</p>
+            <p>{sentence}</p>
         </div>
     )
 }
