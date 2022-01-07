@@ -6,7 +6,7 @@ exports.linkResolver = (doc) => {
   
     // URL for a product type
     if (doc.type === 'project') {
-      return `/project/${doc.uid}`
+      return `/proyecto/${doc.uid}`
     }
   
     // Backup for all other types

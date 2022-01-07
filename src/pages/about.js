@@ -5,7 +5,7 @@ import ArticleLayout from '../components/article-layout'
 
 const About = ({ data }) => {
     if (!data) return null
-    const doc = data.prismicAboutMe.data
+    const doc = data.allPrismicAboutMe.nodes[0].data
 
     return (
         <div>
@@ -15,6 +15,7 @@ const About = ({ data }) => {
     )
 }
 
+/*
 export const query = graphql`
     query AboutMe {
         prismicAboutMe {
@@ -45,6 +46,27 @@ export const query = graphql`
         }
     }
     
+`*/
+
+export const query = graphql`
+    query AboutMe {
+        allPrismicAboutMe {
+            nodes {
+              data {
+                about_me_header {
+                  text
+                }
+                about_me_sentence {
+                  text
+                }
+                overview_description
+                overview_header {
+                  text
+                }
+              }
+            }
+        }
+    }
 `
 
 export default About
