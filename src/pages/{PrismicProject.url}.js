@@ -5,7 +5,7 @@ import ArticleLayout from '../components/article-layout'
 
 const Project = ({ data}) => {
     if (!data) return null
-    const doc = data.allPrismicProject.nodes.data
+    const doc = data.prismicProject.data
 
     return (
         <div>
@@ -15,10 +15,11 @@ const Project = ({ data}) => {
     )
 }
 
-/*export const query = graphql`
+export const query = graphql`
     query Project($id: String) {
         prismicProject(id: {eq: $id}) {
             url
+            uid
             data {
                 overview_description
                 overview_header {
@@ -33,32 +34,6 @@ const Project = ({ data}) => {
                 project_characteristics
                 project_title {
                     text
-                }
-            }
-        }
-    }
-`*/
-
-export const query = graphql`
-    query Project {
-        allPrismicProject {
-            nodes {
-                url
-                data {
-                    project_title {
-                        text
-                    }
-                    overview_description
-                    overview_header {
-                        text
-                    }
-                    phase {
-                        phase_description
-                        section_header {
-                            text
-                        }
-                    }
-                    project_characteristics
                 }
             }
         }
