@@ -5,12 +5,27 @@ import ArticleLayout from '../components/article-layout'
 
 const About = ({ data }) => {
     if (!data) return null
-    const doc = data.allPrismicAboutMe.nodes[0].data
+    const doc = data.prismicAboutMe.data
 
     return (
         <div>
             <HeroLayout title={doc.about_me_header.text} sentence={doc.about_me_sentence.text}></HeroLayout>
             <ArticleLayout header={doc.overview_header.text} description={doc.overview_description}></ArticleLayout>
+            <div id="aboutFactsContainer">
+                <div id="factsHeader">
+                    <h2>{doc.facts_header.text}</h2>
+                </div>
+                <div id="facts">
+                    {doc.facts_list.map((listItem) => (
+                        <p>{listItem.fact}</p>
+                    ))}
+                </div>
+            </div>
+            <div id="moreInfo">
+                {doc.more_info_group.map((node) => (
+                    <ArticleLayout header={node.more_info_header.text} description={node.more_info_description}/>
+                ))}
+            </div>
         </div>
     )
 }
