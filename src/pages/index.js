@@ -11,6 +11,16 @@ const Homepage = ({ data }) => {
     <div>
       <HeroLayout title={doc.portfolio_header.text} sentence={doc.portfolio_sentence.text}></HeroLayout>
       <ArticleLayout header={doc.portfolio_overview_header.text} description={doc.portfolio_overview_description}></ArticleLayout>
+      <div id="projectTree">
+        <div>
+          <h2>{doc.project_tree_header.text}</h2>
+        </div>
+        <div>
+          {doc.project_tree_group.map((node) => (
+            <h2>{node.project_category}</h2>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
