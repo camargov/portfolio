@@ -2,6 +2,7 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import HeroLayout from '../components/hero-layout'
 import ArticleLayout from '../components/article-layout'
+import Footer from '../components/footer'
 
 const Homepage = ({ data }) => {
   if (!data) return null
@@ -9,8 +10,8 @@ const Homepage = ({ data }) => {
 
   return (
     <div>
-      <HeroLayout title={doc.portfolio_header.text} sentence={doc.portfolio_sentence.text}></HeroLayout>
-      <ArticleLayout header={doc.portfolio_overview_header.text} description={doc.portfolio_overview_description}></ArticleLayout>
+      <HeroLayout title={doc.portfolio_header.text} sentence={doc.portfolio_sentence.text}/>
+      <ArticleLayout header={doc.portfolio_overview_header.text} description={doc.portfolio_overview_description}/>
       <div id="projectTree">
         <div>
           <h2>{doc.project_tree_header.text}</h2>
@@ -21,6 +22,7 @@ const Homepage = ({ data }) => {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

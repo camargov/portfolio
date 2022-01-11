@@ -11,6 +11,11 @@ const Project = ({ data}) => {
         <div>
             <HeroLayout title={doc.project_title.text} sentence={doc.project_characteristics}/>
             <ArticleLayout header={doc.overview_header.text} description={doc.overview_description}/>
+            <div className='project-details'>
+                {doc.phase.map((node) => (
+                    <ArticleLayout header={node.section_header.text} description={node.phase_description}/>
+                ))}
+            </div>
         </div>
     )
 }
