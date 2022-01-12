@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import HeroLayout from '../components/hero-layout'
 import ArticleLayout from '../components/article-layout'
 import Footer from '../components/footer'
+import Nav from '../components/nav'
 
 const Homepage = ({ data }) => {
   if (!data) return null
@@ -10,6 +11,7 @@ const Homepage = ({ data }) => {
 
   return (
     <div>
+      <Nav/>
       <HeroLayout title={doc.portfolio_header.text} sentence={doc.portfolio_sentence.text}/>
       <ArticleLayout header={doc.portfolio_overview_header.text} description={doc.portfolio_overview_description}/>
       <div id="projectTree">

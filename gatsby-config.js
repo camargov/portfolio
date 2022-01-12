@@ -19,6 +19,7 @@ module.exports = {
           project: require('./custom_types/project.json'),
           footer: require('./custom_types/footer.json'),
           about_me: require('./custom_types/about-me.json'),
+          navigation: require('./custom_types/navigation.json'),
         }
       },
     },

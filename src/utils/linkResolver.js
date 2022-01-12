@@ -1,14 +1,14 @@
 exports.linkResolver = (doc) => {
-    // URL for a category type
+    // URL for about type
     if (doc.type === 'about_me') {
-      return `/about`
+      return '/about'
     }
   
-    // URL for a product type
+    // URL for a project type
     if (doc.type === 'project') {
       return `/project/${doc.uid}`
     }
   
-    // Backup for all other types
+    // URL for homepage type
     return '/'
 }

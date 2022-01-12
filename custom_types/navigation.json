@@ -1,0 +1,67 @@
+{
+    "Main" : {
+      "regular_navigation" : {
+        "type" : "Group",
+        "config" : {
+          "fields" : {
+            "top_level_link" : {
+              "type" : "Link",
+              "config" : {
+                "label" : "Top Level Link",
+                "select" : null
+              }
+            },
+            "top_level_link_label" : {
+              "type" : "Text",
+              "config" : {
+                "label" : "Top Level Link Label"
+              }
+            }
+          },
+          "label" : "Regular Navigation"
+        }
+      },
+      "nav" : {
+        "type" : "Slices",
+        "fieldset" : "Slice zone",
+        "config" : {
+          "choices" : {
+            "nav_item" : {
+              "type" : "Slice",
+              "fieldset" : "Nav Item",
+              "description" : "Nav Item with Sub Navigation",
+              "icon" : "insert_link",
+              "non-repeat" : {
+                "label" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "single" : "paragraph",
+                    "label" : "Label",
+                    "placeholder" : "Enter Link Label..."
+                  }
+                }
+              },
+              "repeat" : {
+                "sub_nav_link_label" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "single" : "paragraph",
+                    "label" : "Sub Nav Link Label",
+                    "placeholder" : "Enter Sub Nav Link Label..."
+                  }
+                },
+                "sub_nav_link" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Sub Nav Link",
+                    "placeholder" : "Select Sub Nav Link...",
+                    "select" : null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
